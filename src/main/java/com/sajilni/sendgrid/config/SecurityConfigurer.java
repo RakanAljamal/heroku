@@ -2,7 +2,6 @@ package com.sajilni.sendgrid.config;
 
 import com.sajilni.sendgrid.filters.JwtRequestFilter;
 import com.sajilni.sendgrid.service.UserDetailService;
-import com.sun.org.apache.xerces.internal.xs.StringList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;

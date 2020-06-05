@@ -1,7 +1,7 @@
 package com.sajilni.sendgrid.rest;
 
-import com.sajilni.sendgrid.entity.Forms;
-import com.sajilni.sendgrid.entity.PaymentTypeForms;
+//import com.sajilni.sendgrid.entity.Forms;
+//import com.sajilni.sendgrid.entity.PaymentTypeForms;
 import com.sajilni.sendgrid.mailer.SendGridMailer;
 import com.sajilni.sendgrid.models.AuthenticationRequest;
 import com.sajilni.sendgrid.models.AuthenticationResponse;
@@ -50,16 +50,16 @@ public class welcome {
         return "Hello World !!";
     }
 
-    @GetMapping("/hello")
-    private String hello() {
-        Forms forms = new Forms();
-        PaymentTypeForms paymentTypeForms = new PaymentTypeForms();
-        paymentTypeForms.setForm(forms);
-        paymentTypeForms.setLang("ar");
-        forms.getPaymentTypeForms().add(paymentTypeForms);
-        formRakanService.add(forms);
-        return "Hello :)";
-    }
+//    @GetMapping("/hello")
+//    private String hello() {
+//        Forms forms = new Forms();
+//        PaymentTypeForms paymentTypeForms = new PaymentTypeForms();
+//        paymentTypeForms.setForm(forms);
+//        paymentTypeForms.setLang("ar");
+//        forms.getPaymentTypeForms().add(paymentTypeForms);
+//        formRakanService.add(forms);
+//        return "Hello :)";
+//    }
 
     @GetMapping("/private")
     private String privatePage() {
