@@ -45,6 +45,11 @@ public class welcome {
 
     SendGridService sendGridService;
 
+    @GetMapping("/")
+    private String helloWorld() {
+        return "Hello World !!";
+    }
+
     @GetMapping("/hello")
     private String hello() {
         Forms forms = new Forms();
