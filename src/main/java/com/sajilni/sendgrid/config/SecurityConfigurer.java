@@ -30,7 +30,7 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        String[] publicPaths = new String[]{"/","/authenticate", "/hello"};
+        String[] publicPaths = new String[]{"/","/authenticate", "/hello","/showEmails"};
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers(publicPaths).permitAll()
